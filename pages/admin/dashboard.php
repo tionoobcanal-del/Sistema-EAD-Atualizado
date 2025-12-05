@@ -123,9 +123,24 @@
     </div>
 
     <div style="margin-top: 40px;">
-      <div class="section-title">Adicionar Curso</div>
-      <!-- Formulário futuro aqui -->
+  <div class="section-title" style="display: flex; justify-content: space-between; align-items: center;">
+    <span>Adicionar Curso</span>
+    <button id="toggleForm" class="btn-add">+ Adicionar Curso</button>
+  </div>
+
+  <form id="courseForm" style="display: none; margin-top: 20px;">
+    <div class="form-group">
+      <label for="titulo">Título do Curso</label>
+      <input type="text" id="titulo" name="titulo" required />
     </div>
+    <div class="form-group">
+      <label for="descricao">Descrição</label>
+      <textarea id="descricao" name="descricao" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn-login">Salvar Curso</button>
+  </form>
+</div>
+
 
     <div style="margin-top: 40px;">
       <div class="section-title">Cursos Existentes</div>
